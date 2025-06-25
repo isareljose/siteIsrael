@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+            min-width: 80px;
+            height: 30px;
+        }
+        
+        .table1 th {
+            text-align: left;
+        }
+        
+        .table2 th {
+            text-align: center;
+        }
+        
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #666;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Primeira Tabela-->
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela Modificada</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <!-- Primeira linha com NAME ocupando 2 colunas -->
+    <tr>
+        <th colspan="2">NAME</th>
+        <th></th>  <!-- Terceira coluna vazia -->
+    </tr>
+    
+    <!-- 4 linhas seguintes com 3 colunas cada -->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+</body>
+
+<!-- Segunda Tabela-->
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela APRIL</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            min-width: 60px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+<!-- Tabela APRIL -->
+<table>
+    <!-- Linha 1 -->
+    <tr>
+        <th rowspan="3">APRIL</th>  <!-- Ocupa 3 linhas (1ª linha + 2 abaixo) -->
+        <td></td>  <!-- 2ª coluna -->
+        <td></td>  <!-- 3ª coluna -->
+    </tr>
+    
+    <!-- Linha 2 -->
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <!-- Linha 3 -->
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <!-- Linha 4 -->
+    <tr>
+        <td></td>  <!-- Nova célula na 1ª coluna -->
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <!-- Linha 5 -->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+<!-- terceira tabela -->
+ <table>
+    <tr>
+        <th colspan="3">2022</th>
+    </tr>
+    <tr>
+        <td rowspan="2"></td>
+        <td rowspan="2"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="2">FIESTA</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>
