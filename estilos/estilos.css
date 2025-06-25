@@ -26,12 +26,12 @@ p{
 }
 a {
     text-decoration: nome;
-    color: #e0eeee;
+    color: #01f121;
     font-weight: bold;
     transition: 0.3s;
 }
 a:hover {
-    color: #ff4500;
+    color: #fbff05fd;
 }
 a:active {
     color: purple;
