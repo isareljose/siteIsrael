@@ -11,6 +11,28 @@ h2{
   
 }
 p{
-    color:rgb(255, 255, 255)
+    color:rgb(51, 247, 1)
    
+}
+.TextoBorda {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0.2);
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-image: url("../imagens/fundoDoSite.png");
+    background-color: #000000;
+}
+a {
+    text-decoration: nome;
+    color: #e0eeee;
+    font-weight: bold;
+    transition: 0.3s;
+}
+a:hover {
+    color: #ff4500;
+}
+a:active {
+    color: purple;
 }
