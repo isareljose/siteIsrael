@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Exemplos</title>
+  <style>
+    .container {
+      background: #ffffff;
+      margin: 20px;
+      padding: 10px;
+      display: flex;
+    }
+    .item {
+      background: rgb(177, 102, 238);
+      margin: 2px;
+      padding: 10px;
+      border: 1px solid #02ff17;
+    }
+
+    .ex1 {
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+    }
+
+    .ex2 {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    .ex3 {
+      justify-content: space-around;
+    }
+
+    .ex4 {
+      justify-content: flex-end;
+    }
+
+    .ex5 {
+      justify-content: space-between;
+    }
+
+    .ex6 {
+      justify-content: space-evenly;
+    }
+
+    .ex7 {
+      justify-content: flex-start;
+    }
+
+    .ex8 {
+      justify-content: center;
+    }
+
+    .ex9 {
+      justify-content: flex-start;
+    }
+
+    .ex10 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .container > div {
+      width: 40px;
+      text-align: center;
+    }
+
+    .box {
+      background-color: #014412;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box ex1 container">
+    <div class="item">3</div>
+    <div class="item">2</div>
+    <div class="item">1</div>
+  </div>
+
+  <div class="box ex2 container">
+    <div class="item">3</div>
+    <div class="item">2</div>
+    <div class="item">1</div>
+  </div>
+
+  <div class="box ex3 container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <div class="box ex4 container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <div class="box ex5 container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <div class="box ex6 container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <div class="box ex7 container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <div class="box ex8 container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <div class="box ex9 container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <div class="box ex10 container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+</body>
+</html>
