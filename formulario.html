@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manutenção de Usuário do Sistema Interno</title>
+<style>
+    /* Estilos Gerais */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    /* Container Principal do Formulário */
+    .form-container {
+        border: 1px solid #ccc;
+        background-color: #f0f0f0;
+        width: 600px;
+        padding: 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Cabeçalho do Formulário */
+    .form-header {
+        background-color: #666;
+        color: white;
+        padding: 8px 15px;
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    /* Tabela para alinhamento do formulário */
+    .form-table {
+        border-collapse: collapse;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .form-table td {
+        padding: 5px;
+        vertical-align: middle;
+    }
+
+    /* Estilo para as labels (texto à esquerda) */
+    .form-table td.label {
+        text-align: right;
+        width: 120px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    /* Estilos para os campos de entrada */
+    input[type="text"],
+    input[type="password"],
+    select,
+    textarea {
+        border: 1px solid #999;
+        padding: 4px;
+        border-radius: 2px;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 250px;
+    }
+
+    select {
+        width: 120px;
+    }
+
+    /* Placeholder para o campo de data */
+    .date-input-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .date-input-wrapper input {
+        width: 100px;
+    }
+
+    .date-input-wrapper::after {
+        content: '📅';
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 16px;
+        pointer-events: none;
+    }
+    
+    /* Área de texto para comentários */
+    textarea {
+        width: 350px;
+        height: 80px;
+        resize: vertical;
+    }
+
+    /* Alinhamento de radio buttons e checkboxes */
+    .options-group, .checkbox-group {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .options-group label, .checkbox-group label {
+        margin-right: 15px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+    
+    input[type="radio"], input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    /* Linha dos checkboxes */
+    .checkbox-group {
+        line-height: 1.8;
+    }
+    
+    /* Container dos botões */
+    .form-buttons {
+        padding: 20px 15px 15px 15px;
+    }
+
+    /* Estilo dos botões */
+    .btn {
+        padding: 5px 12px;
+        border: 1px solid #999;
+        background-color: #e0e0e0;
+        font-size: 13px;
+        cursor: pointer;
+        margin-right: 5px;
+        border-radius: 3px;
+    }
+    
+    .btn:hover {
+        background-color: #d0d0d0;
+    }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="form-header">
+        MANUTENÇÃO DE USUÁRIO DO SISTEMA INTERNO
+    </div>
+
+    <form action="#" method="post">
+        <table class="form-table">
+            <tbody>
+                <tr>
+                    <td class="label">Login</td>
+                    <td><input type="text" name="login"></td>
+                </tr>
+                <tr>
+                    <td class="label">Senha</td>
+                    <td><input type="password" name="senha"></td>
+                </tr>
+                <tr>
+                    <td class="label">Status</td>
+                    <td>
+                        <select name="status">
+                            <option value="ativo" selected>Ativo</option>
+                            <option value="inativo">Inativo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Tipo</td>
+                    <td class="options-group">
+                        <label><input type="radio" name="tipo_usuario" value="tecnico"> Técnico</label>
+                        <label><input type="radio" name="tipo_usuario" value="professor"> Professor</label>
+                        <label><input type="radio" name="tipo_usuario" value="aluno"> Aluno</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Data da Criação</td>
+                    <td>
+                        <div class="date-input-wrapper">
+                             <input type="text" name="data_criacao" placeholder="dd/mm/aaaa">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Perfil</td>
+                    <td class="options-group">
+                        <label><input type="radio" name="perfil" value="convidado"> Convidado</label>
+                        <label><input type="radio" name="perfil" value="administrador"> Administrador</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label" style="vertical-align: top; padding-top: 8px;">Comentários</td>
+                    <td><textarea name="comentarios"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="label" style="vertical-align: top; padding-top: 8px;">Tipo</td>
+                    <td class="checkbox-group">
+                        <label><input type="checkbox" name="tipo_acesso[]" value="compras"> Compras</label>
+                        <label><input type="checkbox" name="tipo_acesso[]" value="biblioteca"> Biblioteca</label>
+                        <label><input type="checkbox" name="tipo_acesso[]" value="academico"> Acadêmico</label>
+                        <label><input type="checkbox" name="tipo_acesso[]" value="documentacao"> Documentação</label>
+                        <label><input type="checkbox" name="tipo_acesso[]" value="rh"> Recursos Humanos</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="form-buttons">
+            <button type="submit" class="btn">Cadastrar</button>
+            <button type="button" class="btn">Excluir</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
